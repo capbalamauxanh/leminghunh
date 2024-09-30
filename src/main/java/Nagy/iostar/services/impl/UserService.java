@@ -29,7 +29,7 @@ public class UserService implements IUserService {
 		return userDao.findByUserName(username);
 	}
 
-	public static boolean updatePassword(String username, String newPassword) {
+	public static boolean updatePassword1(String username, String newPassword) {
         String sql = "UPDATE user SET password = ? WHERE username = ?";
         try (Connection connection = DBConnectMySQL.getDatabaseConnection();
              PreparedStatement statement = connection.prepareStatement(sql)) {
@@ -61,6 +61,36 @@ public class UserService implements IUserService {
 	            return false;
 	        }
 
+	}
+
+	@Override
+	public void insertUser(UserModel user) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean checkExistUsername(String username) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean checkExistEmail(String email) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean checkExistPhone(String phone) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void updatePassword(String username, String newPassword) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 }

@@ -25,11 +25,17 @@
                         <input type="password" class="form-control" id="password" name="password" required>
                         <input type="checkbox" name="remember"> Remember me
                       </div>
+                   
                     </div>           
-                    
                     <div class="row">
                       <div class="col-lg-8 col-md-offset-4 padding-left-0">
-                        <a href="${pageContext.request.contextPath}/forgotton-password">Forget Password?</a>
+                        <a href="${pageContext.request.contextPath}/register">Register?</a>
+                      </div>
+                    </div>
+                   
+                    <div class="row">
+                      <div class="col-lg-8 col-md-offset-4 padding-left-0">
+                        <a href="${pageContext.request.contextPath}/forgot-password">Forgot Password?</a>
                       </div>
                     </div>
                     <div class="row">
