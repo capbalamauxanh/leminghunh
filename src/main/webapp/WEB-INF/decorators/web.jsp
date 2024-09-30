@@ -63,15 +63,10 @@ License: You must have a valid license purchased only from themeforest (the abov
 <!-- Global styles END -->
 
 <!-- Page level plugin styles START -->
-<link
-	href="${URL}assets/global/plugins/fancybox/source/jquery.fancybox.css"
-	rel="stylesheet">
-<link
-	href="${URL}assets/global/plugins/carousel-owl-carousel/owl-carousel/owl.carousel.css"
-	rel="stylesheet">
-<link
-	href="${URL}assets/global/plugins/slider-layer-slider/css/layerslider.css"
-	rel="stylesheet">
+<link href="${URL}assets/global/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
+<link href="${URL}assets/global/plugins/carousel-owl-carousel/owl-carousel/owl.carousel.css" rel="stylesheet">
+<link href="${URL}assets/global/plugins/slider-layer-slider/css/layerslider.css" rel="stylesheet">
+<link href="${URL}assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css">
 <!-- Page level plugin styles END -->
 
 <!-- Theme styles START -->
@@ -112,40 +107,12 @@ License: You must have a valid license purchased only from themeforest (the abov
 		</div>
 	</div>
 
-	<!-- Begin Header -->
+	<!-- Begin Brands -->
 	<%@ include file="/commons/web/brands.jsp"%>
-	<!-- End Header -->
+	<!-- End Brands -->
 
 	<!-- BEGIN STEPS -->
-	<div class="steps-block steps-block-red">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4 steps-block-col">
-					<i class="fa fa-truck"></i>
-					<div>
-						<h2>Free shipping</h2>
-						<em>Express delivery withing 3 days</em>
-					</div>
-					<span>&nbsp;</span>
-				</div>
-				<div class="col-md-4 steps-block-col">
-					<i class="fa fa-gift"></i>
-					<div>
-						<h2>Daily Gifts</h2>
-						<em>3 Gifts daily for lucky customers</em>
-					</div>
-					<span>&nbsp;</span>
-				</div>
-				<div class="col-md-4 steps-block-col">
-					<i class="fa fa-phone"></i>
-					<div>
-						<h2>477 505 8877</h2>
-						<em>24/7 customer care available</em>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<%@ include file="/commons/web/steps.jsp"%>
 	<!-- END STEPS -->
 
 	<!-- Begin footer -->
@@ -188,6 +155,7 @@ License: You must have a valid license purchased only from themeforest (the abov
 		src="${URL}assets/global/plugins/bootstrap-touchspin/bootstrap.touchspin.js"
 		type="text/javascript"></script>
 	<!-- Quantity -->
+	<script src="${URL}assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
 
 	<!-- BEGIN LayerSlider -->
 	<script
@@ -215,8 +183,8 @@ License: You must have a valid license purchased only from themeforest (the abov
 			LayersliderInit.initLayerSlider();
 			Layout.initImageZoom();
 			Layout.initTouchspin();
+			Layout.initUniform();
 			Layout.initTwitter();
-
 			Layout.initFixHeaderWithPreHeader();
 			Layout.initNavScrolling();
 		});

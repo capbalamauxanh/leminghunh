@@ -1,10 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-	
-<!-- Begin Slider -->
-<%@ include file="/commons/web/slider.jsp"%>
-<!-- End Slider -->
+    pageEncoding="UTF-8"%>
 
+<!-- Begin Header -->
+<%@ include file="/commons/web/slider.jsp"%>
+<!-- End Header -->
 <!-- BEGIN SALE PRODUCT & NEW ARRIVALS -->
 <div class="row margin-bottom-40">
 	<!-- BEGIN SALE PRODUCT -->
